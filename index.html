@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="google-site-verification" content="ULe3T1gXSoH1X5o05wv5WuWDoqTrLZacob8GJhC50-k" />
+<meta name="google-site-verification" content="ULe3T1gXSoH1X5o05wv5WuWDoqTrLZacob8GJhC50-k" />
 
 <title>Smartimes Media</title>
 
@@ -26,9 +25,10 @@ body{
 
 header{
     background:linear-gradient(135deg,#111827,#1e293b);
-    padding:20px 8%;
+    padding:25px 8%;
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
     border-bottom:3px solid #38bdf8;
     box-shadow:0 5px 20px rgba(0,0,0,0.5);
@@ -37,24 +37,36 @@ header{
     z-index:1000;
 }
 
+/* CENTER LOGO */
+
 .logo{
     display:flex;
+    flex-direction:column;
     align-items:center;
+    justify-content:center;
     gap:15px;
+    text-align:center;
+    margin-bottom:20px;
 }
 
 .logo img{
-    width:90px;
-    height:90px;
+    width:130px;
+    height:130px;
     border-radius:50%;
-    border:3px solid #38bdf8;
-    padding:5px;
+    border:4px solid #38bdf8;
+    padding:6px;
     background:white;
     object-fit:cover;
+    box-shadow:0 5px 25px rgba(56,189,248,0.5);
+    transition:0.5s;
+}
+
+.logo img:hover{
+    transform:scale(1.05) rotate(5deg);
 }
 
 .logo h1{
-    font-size:34px;
+    font-size:42px;
     color:#38bdf8;
 }
 
@@ -62,17 +74,28 @@ header{
     color:#c084fc;
 }
 
+/* NAVIGATION */
+
+nav{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 nav a{
     text-decoration:none;
     color:white;
-    margin-left:25px;
     font-size:18px;
     transition:0.3s;
     font-weight:bold;
+    padding:10px 18px;
+    border-radius:10px;
 }
 
 nav a:hover{
-    color:#38bdf8;
+    background:#38bdf8;
+    color:#0f172a;
 }
 
 /* HERO SECTION */
@@ -224,17 +247,6 @@ footer{
 
 @media(max-width:768px){
 
-    header{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
     .hero h2{
         font-size:40px;
     }
@@ -245,6 +257,15 @@ footer{
 
     .card img{
         height:350px;
+    }
+
+    .logo h1{
+        font-size:34px;
+    }
+
+    .logo img{
+        width:100px;
+        height:100px;
     }
 
 }
@@ -258,6 +279,8 @@ footer{
 
 <header>
 
+<!-- CENTER LOGO -->
+
 <div class="logo">
 
 <img src="logo.png" alt="Smartimes Media Logo">
@@ -267,6 +290,8 @@ footer{
 </div>
 
 </div>
+
+<!-- NAVIGATION -->
 
 <nav>
 <a href="index.html">Home</a>
@@ -439,7 +464,7 @@ for social media and branding.
 Contact Smartimes Media for bookings, events, portraits and professional photography services.
 </p>
 
-<a href="tel:0726212101">📞 0711720902</a>
+<a href="tel:0711720902">📞 0711720902</a>
 
 </section>
 
@@ -447,7 +472,7 @@ Contact Smartimes Media for bookings, events, portraits and professional photogr
 
 <footer>
 
-© 2026 Smartimes Media | Eldoret Town Opposite Huduma Centre
+© 2026 Smartimes Media | Eldoret Town Opposite Huduma Centre<br>Developed by Vannyspark
 
 </footer>
 
