@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Smartimes Media</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#141e30,#243b55);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:3px solid #00c6ff;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-size:18px;
+font-weight:bold;
+transition:0.4s;
+padding:10px 18px;
+border-radius:12px;
+}
+
+nav a:hover{
+background:#00c6ff;
+color:#0f2027;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 10%;
+text-align:center;
+}
+
+/* CENTER LOGO */
+
+.center-logo{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:30px;
+}
+
+.center-logo img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #00c6ff;
+padding:8px;
+background:white;
+object-fit:cover;
+box-shadow:0 10px 30px rgba(0,198,255,0.4);
+transition:0.5s;
+}
+
+.center-logo img:hover{
+transform:scale(1.05) rotate(5deg);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+color:#00c6ff;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.8;
+max-width:850px;
+margin:auto;
+color:#f1f5f9;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+padding:70px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:48px;
+margin-bottom:60px;
+color:#7cf29c;
+}
+
+/* CONTACT GRID */
+
+.contact-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+}
+
+/* CARD */
+
+.contact-card{
+background:linear-gradient(145deg,#1b2735,#2c5364);
+padding:35px;
+border-radius:25px;
+text-align:center;
+border:2px solid rgba(255,255,255,0.1);
+transition:0.5s;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.contact-card:hover{
+transform:translateY(-10px) scale(1.02);
+border-color:#00c6ff;
+box-shadow:0 10px 30px rgba(0,198,255,0.4);
+}
+
+.contact-card h3{
+font-size:30px;
+margin-bottom:15px;
+color:#00c6ff;
+}
+
+.contact-card p{
+font-size:18px;
+line-height:1.7;
+margin-bottom:25px;
+color:#e2e8f0;
+}
+
+/* BUTTON */
+
+.contact-btn{
+display:inline-block;
+padding:14px 25px;
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+color:white;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+border-radius:14px;
+transition:0.4s;
+box-shadow:0 5px 15px rgba(0,198,255,0.3);
+}
+
+.contact-btn:hover{
+transform:scale(1.08);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#0b1320;
+color:#cbd5e1;
+margin-top:60px;
+border-top:3px solid #00c6ff;
+font-size:18px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:38px;
+}
+
+.center-logo img{
+width:140px;
+height:140px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<h2 style="color:#00c6ff;">Smartimes Media</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<!-- CENTER LOGO -->
+
+<div class="center-logo">
+<img src="logo.png" alt="Smartimes Logo">
+</div>
+
+<h1>Contact Smartimes Media</h1>
+
+<p>
+We are ready to capture your best moments professionally.
+Reach us anytime for weddings, graduations, birthdays,
+branding shoots, events and outdoor photography.
+</p>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section">
+
+<h2 class="section-title">Reach Us Easily</h2>
+
+<div class="contact-container">
+
+<!-- WHATSAPP -->
+
+<div class="contact-card">
+
+<h3>WhatsApp</h3>
+
+<p>
+Chat directly with Smartimes Media on WhatsApp.
+</p>
+
+<a class="contact-btn"
+href="https://wa.me/254711720902"
+target="_blank">
+
+Open WhatsApp
+
+</a>
+
+</div>
+
+<!-- CALL -->
+
+<div class="contact-card">
+
+<h3>Phone Call</h3>
+
+<p>
+Call us directly for bookings and inquiries.
+</p>
+
+<a class="contact-btn"
+href="tel:+254711720902">
+
+Call Now
+
+</a>
+
+</div>
+
+<!-- SMS -->
+
+<div class="contact-card">
+
+<h3>SMS</h3>
+
+<p>
+Send a text message anytime for quick communication.
+</p>
+
+<a class="contact-btn"
+href="sms:+254711720902">
+
+Send SMS
+
+</a>
+
+</div>
+
+<!-- EMAIL -->
+
+<div class="contact-card">
+
+<h3>Email</h3>
+
+<p>
+Reach us through email for official photography projects.
+</p>
+
+<a class="contact-btn"
+href="mailto:smartimesmedia@gmail.com">
+
+Send Email
+
+</a>
+
+</div>
+
+<!-- LOCATION -->
+
+<div class="contact-card">
+
+<h3>Location</h3>
+
+<p>
+Visit us in Eldoret Town opposite Huduma Centre.
+</p>
+
+<a class="contact-btn"
+href="https://maps.google.com"
+target="_blank">
+
+Open Map
+
+</a>
+
+</div>
+
+<!-- INSTAGRAM -->
+
+<div class="contact-card">
+
+<h3>Instagram</h3>
+
+<p>
+Follow Smartimes Media for amazing photography updates.
+</p>
+
+<a class="contact-btn"
+href="https://instagram.com"
+target="mavoda mrui">
+
+Open Instagram
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Smartimes Media | Eldoret Town Opposite Huduma Centre
+
+</footer>
+
+</body>
+</html>
